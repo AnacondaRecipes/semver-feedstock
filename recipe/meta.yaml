@@ -37,6 +37,7 @@ about:
     A Python module for semantic versioning. Simplifies comparing versions.
   dev_url: https://github.com/k-bx/python-semver
   doc_url: https://github.com/k-bx/python-semver
+  doc_source_url: https://github.com/k-bx/python-semver/blob/master/README.rst
 
 extra:
   recipe-maintainers:
