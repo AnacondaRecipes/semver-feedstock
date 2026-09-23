@@ -35,7 +35,7 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -v tests
+    - pytest -vv tests
     - pysemver -h
 
 about:
@@ -53,3 +53,6 @@ extra:
   recipe-maintainers:
     - rmax
     - carlodri
+  skip-lints:
+    # source url is reachable
+    - reachable_url
