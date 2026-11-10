@@ -1,13 +1,13 @@
 {% set name = "semver" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14bc073439513d7773662a338f4db9829cf16c12b74b9568e2d2689975fbd7fc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 149b26cabada6f63212f97e94505d21578cb1d280cf714827f328d5e70765fea
 
 build:
   skip: true  # [py<310]
@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - python
-    - setuptools >=61
+    - setuptools >=77.0.3
   run:
     - python
 
